@@ -1,13 +1,13 @@
-/* تأثير تكبير الصور عند التمرير بالماوس */
+
 .img-hover-zoom {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
 .img-hover-zoom:hover {
-  transform: scale(1.08); /* نسبة التكبير عند الوقوف بالماوس */
+  transform: scale(1.08); 
 }
-/* تأثير تحول لون روابط النافبار للأصفر عند مرور الماوس */
+
 .navbar-nav .nav-link:hover {
-  color: #ffc107 !important; /* لون الأصفر الخاص بـ Bootstrap (warning) */
-  transition: color 0.2s ease-in-out; /* حركة تنقل ناعمة للون */
+  color: #ffc107 !important; 
+  transition: color 0.2s ease-in-out; 
 }

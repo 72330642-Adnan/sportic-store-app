@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'; // 1. استدعاء الفوتر هنا
+import Footer from './components/Footer'; 
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import About from './pages/About';
@@ -47,7 +47,7 @@ function App() {
         />
       </Routes>
 
-      <Footer /> {/* 2. إظهار الفوتر في أسفل كل الصفحات */}
+      <Footer /> 
     </Router>
   );
 }

@@ -7,7 +7,7 @@ function Footer() {
       <div className="container">
         <div className="row g-4 text-center text-md-start align-items-start">
           
-          {/* 1. اسم المتجر والوصف */}
+          {/*name website & description*/}
           <div className="col-12 col-md-4">
             <h5 className="fw-bold text-warning mb-2">Sportic Store</h5>
             <p className="text-white-50 small mb-0" style={{ maxWidth: '280px' }}>
@@ -15,7 +15,7 @@ function Footer() {
             </p>
           </div>
 
-          {/* 2. روابط التنقل السريعة */}
+          {/* 2. quik link*/}
           <div className="col-12 col-md-4 text-center">
             <h6 className="fw-bold text-light mb-3">Quick Links</h6>
             <div className="d-flex flex-column gap-2 align-items-center">
@@ -26,14 +26,14 @@ function Footer() {
             </div>
           </div>
 
-          {/* 3. معلومات التواصل والموقع */}
+          {/* 3. contact us &location*/}
           <div className="col-12 col-md-4 text-center text-md-end">
             <h6 className="fw-bold text-light mb-3">Contact Us</h6>
             <small className="text-white-50 d-block mb-2">
               📍 Location: Main Sport Street, Building #4
             </small>
             <small className="text-white-50 d-block mb-2">
-              📞 Phone: +1 (555) 019-2834
+              📞 Phone: +961 700000000
             </small>
             <small className="text-white-50 d-block">
               ✉️ Email: support@sportic.com
@@ -42,10 +42,10 @@ function Footer() {
 
         </div>
 
-        {/* خط فاصل ناعم */}
+        {/* line*/}
         <hr className="my-3 border-secondary opacity-50" />
 
-        {/* حقوق النشر */}
+        
         <div className="text-center">
           <small className="text-white-50">
             &copy; 2026 Sportic Store. All rights reserved.

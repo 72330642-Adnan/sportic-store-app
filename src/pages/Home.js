@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import products from '../data'; // استيراد البيانات من data.js
+import products from '../data'; // data.js
 
 function Home({ addToCart }) {
   const navigate = useNavigate();
 
-  // اختيار 3 منتجات من تصنيفات مختلفة (حذاء، جاكيت/تيشيرت، بنطال/شورت)
+
   const shoeItem = products.find(p => p.category.toUpperCase() === 'SHOES');
   const topItem = products.find(p => p.category.toUpperCase() === 'JACKETS' || p.category.toUpperCase() === 'T-SHIRTS');
   const bottomItem = products.find(p => p.category.toUpperCase() === 'PANTS' || p.category.toUpperCase() === 'SHORTS');
 
-  // مصفوفة العروض المتنوعة (تجمع حذاء + كنزة/جاكيت + بنطال/شورت)
+
   const saleProducts = [shoeItem, topItem, bottomItem].filter(Boolean);
 
-  // تصنيفات المتجر الـ 6 المعتمدة
+
   const categories = [
     { id: 1, name: 'Shoes', icon: '👟', itemsCount: '10 Items' },
     { id: 2, name: 'Jackets', icon: '🧥', itemsCount: '9 Items' },
@@ -89,7 +89,7 @@ function Home({ addToCart }) {
           ))}
         </div>
 
-        {/* 3. HOT DEALS & SPECIAL OFFERS (عروض متنوعة: حذاء، جاكيت/كنزة، بنطال/شورت) */}
+        {/* 3. HOT DEALS & SPECIAL OFFERS */}
         <div className="mb-5">
           <div className="d-flex align-items-center justify-content-between mb-4">
             <div>
@@ -102,14 +102,13 @@ function Home({ addToCart }) {
 
           <div className="row g-4">
             {saleProducts.map((product) => {
-              // حساب السعر القديم المشطوب لإظهار نسبة الخصم
+            
               const oldPrice = (product.price * 1.25).toFixed(0);
 
               return (
                 <div key={product.id} className="col-12 col-sm-6 col-md-4">
                   <div className="card h-100 border-0 shadow-sm position-relative">
-                    
-                    {/* شارة الخصم الحمراء */}
+                    {/*Discount tage*/}
                     <span 
                       className="position-absolute top-0 end-0 bg-danger text-white fw-bold px-3 py-1 small shadow-sm"
                       style={{ borderBottomLeftRadius: '8px', borderTopRightRadius: '4px', zIndex: 1 }}
@@ -132,7 +131,7 @@ function Home({ addToCart }) {
                       <p className="card-text text-muted small flex-grow-1">{product.description}</p>
                       
                       <div className="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
-                        {/* السعر القديم المشطوب والسعر الحالي */}
+                        {/*  old price &new price*/}
                         <div>
                           <span className="text-muted text-decoration-line-through small me-2">${oldPrice}</span>
                           <span className="fs-5 fw-bold text-danger">${product.price}</span>

@@ -4,31 +4,31 @@ import productsList from '../data.js';
 
 function Shop({ addToCart }) {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  // حالة لحفظ المقاس المختار لكل منتج
+  // Store selected size for each product
   const [selectedSizes, setSelectedSizes] = useState({});
 
   const filteredProducts = selectedCategory === 'all'
     ? productsList
     : productsList.filter(item => item.category === selectedCategory);
 
-  // تحديث المقاس عند اختياره من القائمة
+  // Update size when selected from the dropdown
   const handleSizeChange = (productId, size) => {
     setSelectedSizes(prev => ({ ...prev, [productId]: size }));
   };
 
-  // دالة مسبقة التجهيز للحصول على المقاسات التلقائية حسب تصنيف المنتج
+  // Helper function to get default sizes based on product category
   const getAvailableSizes = (product) => {
     if (product.sizes && product.sizes.length > 0) return product.sizes;
     
-    // مقاسات الأحذية (أرقام)
+    // // Shoes sizes (numbers)
     if (product.category === 'shoes') {
       return ['40', '41', '42', '43', '44'];
     }
-    // مقاسات الملابس (أحرف)
+    // Clothing sizes (letters)
     if (['jackets', 't-shirts', 'shorts', 'pants'].includes(product.category)) {
       return ['S', 'M', 'L', 'XL', 'XXL'];
     }
-    // الإكسسوارات وحقائب الرياضة والجوارب (مقاس موحد)
+    // Accessories and other items (One Size)
     return ['One Size'];
   };
 
@@ -39,7 +39,7 @@ function Shop({ addToCart }) {
         <p className="text-muted">Explore high-quality sportswear, accessories, and gym gear</p>
       </div>
 
-      {/* Category Filter Buttons - التصنيفات الـ 6 المعتمدة */}
+     {/* Category filter buttons for the 6 main categories */}
       <div className="d-flex justify-content-center flex-wrap gap-2 mb-5">
         <button 
           className={`btn ${selectedCategory === 'all' ? 'btn-dark' : 'btn-outline-dark'}`}
@@ -111,7 +111,7 @@ function Shop({ addToCart }) {
                     {product.description}
                   </p>
 
-                  {/* قائمة اختيار المقاس (Select Size) */}
+                  {/* (Select Size) */}
                   <div className="mt-2 mb-3">
                     <label className="form-label text-muted small fw-bold mb-1" style={{ fontSize: '0.8rem' }}>
                       Select Size:
