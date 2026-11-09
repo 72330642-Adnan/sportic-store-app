@@ -15,12 +15,12 @@ function Home({ addToCart }) {
 
 
   const categories = [
-    { id: 1, name: 'Shoes', icon: '👟', itemsCount: '10 Items' },
+    { id: 1, name: 'Shoes', icon: '👟', itemsCount: '13 Items' },
     { id: 2, name: 'Jackets', icon: '🧥', itemsCount: '9 Items' },
     { id: 3, name: 'T-Shirts', icon: '👕', itemsCount: '13 Items' },
     { id: 4, name: 'Shorts', icon: '🩳', itemsCount: '7 Items' },
     { id: 5, name: 'Pants', icon: '👖', itemsCount: '9 Items' },
-    { id: 6, name: 'Gym Accessories', icon: '🎒', itemsCount: '7 Items' }
+    { id: 6, name: 'Gym Accessories', icon: '🎒', itemsCount: '21 Items' }
   ];
 
   return (
