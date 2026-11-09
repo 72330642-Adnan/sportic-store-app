@@ -8,7 +8,7 @@
 - **University:** Lebanese International University (LIU)
 - **Course:** CSCI426 - Advanced Web Programming (Phase 1)
 - **Project Title:** Sportic Store E-Commerce Platform
-
+- **Project Type** Individual Project(Contribution by Adnan Naji Deeb)
 ---
 
 ## 🔗 Project Links
@@ -42,3 +42,38 @@ To run this project on your local machine:
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/72330642-Adnan/sportic-store-app.git](https://github.com/72330642-Adnan/sportic-store-app.git)
+
+
+2. ** Navigate into the project folder:**
+cd sportic-store-app
+
+3. ** Install dependencies:**
+npm install
+
+4. ** Run the application:**
+npm start
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](./public/images/home.PNG)
+
+### Shop Page
+![Shop Page](./public/images/shop.PNG)
+
+### Product Details
+![Product Details](./public/images/product.PNG)
+
+### Cart Page
+![Cart Page](./public/images/cart.PNG)
+
+### About Page
+![About Page](./public/images/about.PNG)
+
+### Contact Page
+![Contact Page](./public/images/contact.PNG)
+
+
+## 📜 Academic Integrity Statement
+
+This project was developed independently by **Adnan Naji Deeb** as an individual effort for the CSCI426 course at Lebanese International University (LIU).
