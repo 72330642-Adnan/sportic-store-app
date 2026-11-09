@@ -65,7 +65,7 @@ npm start
 ![Product Details](./public/images/product.png)
 
 ### Cart Page
-![Cart Page](./public/images/cart.png)
+![Cart Page](./public/images/cart1.png)
 
 ### About Page
 ![About Page](./public/images/about.png)
