@@ -56,22 +56,22 @@ npm start
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](./public/images/home.PNG)
+![Home Page](./public/images/home.png)
 
 ### Shop Page
-![Shop Page](./public/images/shop.PNG)
+![Shop Page](./public/images/shop.png)
 
 ### Product Details
-![Product Details](./public/images/product.PNG)
+![Product Details](./public/images/product.png)
 
 ### Cart Page
-![Cart Page](./public/images/cart.PNG)
+![Cart Page](./public/images/cart.png)
 
 ### About Page
-![About Page](./public/images/about.PNG)
+![About Page](./public/images/about.png)
 
 ### Contact Page
-![Contact Page](./public/images/contact.PNG)
+![Contact Page](./public/images/contact.png)
 
 
 ## 📜 Academic Integrity Statement
