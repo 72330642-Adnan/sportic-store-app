@@ -41,8 +41,7 @@ To run this project on your local machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/72330642-Adnan/sportic-store-app.git](https://github.com/72330642-Adnan/sportic-store-app.git)
-
+   git clone https://github.com/72330642-Adnan/sportic-store-app.git
 
 2. ** Navigate into the project folder:**
 cd sportic-store-app
